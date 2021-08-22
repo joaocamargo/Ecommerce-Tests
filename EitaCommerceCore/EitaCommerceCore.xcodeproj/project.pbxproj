@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		053615D926D14FA9009F7C05 /* EitaCommerceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053615CF26D14FA9009F7C05 /* EitaCommerceCore.framework */; };
 		053615EA26D153F4009F7C05 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053615E926D153F4009F7C05 /* CartTests.swift */; };
+		05A24D1426D27E3B00465FFA /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A24D1326D27E3B00465FFA /* Cart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 		053615D826D14FA9009F7C05 /* EitaCommerceCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EitaCommerceCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		053615DF26D14FA9009F7C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		053615E926D153F4009F7C05 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
+		05A24D1326D27E3B00465FFA /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				053615D326D14FA9009F7C05 /* Info.plist */,
+				05A24D1326D27E3B00465FFA /* Cart.swift */,
 			);
 			path = EitaCommerceCore;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				TargetAttributes = {
 					053615CE26D14FA9009F7C05 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					053615D726D14FA9009F7C05 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A24D1426D27E3B00465FFA /* Cart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +343,7 @@
 		053615E426D14FA9009F7C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZLRHSN44X4;
@@ -354,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -362,6 +369,7 @@
 		053615E526D14FA9009F7C05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = ZLRHSN44X4;
@@ -386,6 +394,7 @@
 		053615E726D14FA9009F7C05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLRHSN44X4;
@@ -406,6 +415,7 @@
 		053615E826D14FA9009F7C05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLRHSN44X4;
