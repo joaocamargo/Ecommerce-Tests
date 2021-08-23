@@ -10,9 +10,9 @@ import EitaCommerceCore
 
 class CartTests: XCTestCase {
     
-    let item1 = "Item 1"
-    let item2 = "Item 2"
-    let item3 = "Item 3"
+    let item1 = CartItem(item: "Item 1")
+    let item2 = CartItem(item: "Item 2")
+    let item3 = CartItem(item: "Item 3")
 
     func testCart_AddOneIitem_ShouldHaveOneIitem(){
         
@@ -24,7 +24,7 @@ class CartTests: XCTestCase {
                
         //Assert
         XCTAssertEqual(sut.getItems().count,1)
-        XCTAssertEqual(sut.getItems().first,item1)
+        XCTAssertTrue(sut.getItems().first!.isEqual(item1))
     }
     
     
@@ -38,8 +38,8 @@ class CartTests: XCTestCase {
         sut.addItem(item2)
                
         //Assert
-        XCTAssertEqual(sut.getItems().first,item1)
-        XCTAssertEqual(sut.getItems().last,item2)
+        XCTAssertTrue(sut.getItems().first!.isEqual(item1))
+        XCTAssertTrue(sut.getItems().last!.isEqual(item2))
         XCTAssertEqual(sut.getItems().count,2)
     }
     
@@ -51,8 +51,8 @@ class CartTests: XCTestCase {
         sut.removeItem(item1)
         
         //Assert
-        XCTAssertEqual(sut.getItems().first,item2)
-        XCTAssertEqual(sut.getItems().last,item2)
+        XCTAssertTrue(sut.getItems().first!.isEqual(item2))
+        XCTAssertTrue(sut.getItems().last!.isEqual(item2))
         XCTAssertEqual(sut.getItems().count,1)
     }
     
@@ -65,8 +65,8 @@ class CartTests: XCTestCase {
 
                
         //Assert
-        XCTAssertEqual(sut.getItems().first,item1)
-        XCTAssertEqual(sut.getItems().last,item2)
+        XCTAssertTrue(sut.getItems().first!.isEqual(item1))
+        XCTAssertTrue(sut.getItems().last!.isEqual(item2))
         XCTAssertEqual(sut.getItems().count,2)
     }
     
@@ -77,6 +77,17 @@ class CartTests: XCTestCase {
         sut.clear()
         
         XCTAssertTrue(sut.getItems().isEmpty)
+    }
+    
+    
+   struct CartItem: CartItemProtocol {
+        
+        let item: String
+        
+        func isEqual(_ other: CartItemProtocol) -> Bool {
+            return item == other.item
+        }
+        
     }
     
 }
