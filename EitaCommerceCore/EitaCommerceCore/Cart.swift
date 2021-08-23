@@ -21,16 +21,23 @@ public protocol CartItemProtocol {
 
 public final class Cart {
     
+    //MARK: - private properties
+    
     private var items: [CartItemProtocol]
+    
+    //MARK: - public init
+    
+    public init(items: [CartItemProtocol]) {
+        self.items = Cart.addItemOrUpdateQuantity(items)
+    }
+    
+    //MARK: - Public methods
     
     public func getItems() -> [CartItemProtocol] {
         return items
     }
     
     
-    public init(items: [CartItemProtocol]) {
-        self.items = items
-    }
     
     public func addItem(_ item: CartItemProtocol) {
         
@@ -58,6 +65,36 @@ public final class Cart {
         return items.map({$0.price}).reduce(0,+)
     }
     
+    //MARK: - Private Items
     
-    
+    private static func addItemOrUpdateQuantity(_ items: [CartItemProtocol]) -> [CartItemProtocol] {
+        
+        //removo todos os items que estão duplicados trazendo os mesmos apenas uma vez
+        let uniqueArray = items.filterDuplicates{ $0.isEqual($1) }
+        
+        //para cada item do array inicial conto quantos vezes ele apareceu e atribuo ao array inicial
+        uniqueArray.forEach { item in
+            item.setQuantity(items.filter{$0.isEqual(item)}.count)
+        }
+        
+        return uniqueArray
+        
+        
+        // EITA DEV
+        //        var filteredItems = [CartItemProtocol]()
+        //
+        //        items.forEach { item in
+        //            let internalFilterItem = items.filter { internalItem in
+        //                item.isEqual(internalItem)
+        //            }
+        //
+        //            if !filteredItems.contains(where: { $0.isEqual(item) }) {
+        //                item.setQuantity(internalFilterItem.count)
+        //                filteredItems.append(item)
+        //            }
+        //        }
+        //
+        //        return filteredItems
+        
+    }
 }
