@@ -10,9 +10,9 @@ import EitaCommerceCore
 
 class CartTests: XCTestCase {
     
-    let item1 = CartItem(item: "Item 1")
-    let item2 = CartItem(item: "Item 2")
-    let item3 = CartItem(item: "Item 3")
+    let item1 = CartItem(item: "Item 1", price: 10)
+    let item2 = CartItem(item: "Item 2", price: 10)
+    let item3 = CartItem(item: "Item 3", price: 10)
 
     func testCart_AddOneIitem_ShouldHaveOneIitem(){
         
@@ -79,10 +79,30 @@ class CartTests: XCTestCase {
         XCTAssertTrue(sut.getItems().isEmpty)
     }
     
+    func testCart_getPrice_ShouldBe10(){
+        //arrange
+        let sut = Cart(items: [item1])
+        
+               
+        //assert
+        XCTAssertEqual(sut.getPrice(),10)
+    }
     
-   struct CartItem: CartItemProtocol {
+    func testCart_getPrice_ShouldBe20(){
+        //arrange
+        let sut = Cart(items: [item1,item2])
+        
+               
+        //assert
+        XCTAssertEqual(sut.getPrice(),20)
+    }
+    
+    
+    struct CartItem: CartItemProtocol {
         
         let item: String
+        var price: Double
+
         
         func isEqual(_ other: CartItemProtocol) -> Bool {
             return item == other.item
@@ -91,3 +111,5 @@ class CartTests: XCTestCase {
     }
     
 }
+
+
