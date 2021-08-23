@@ -97,15 +97,43 @@ class CartTests: XCTestCase {
         XCTAssertEqual(sut.getPrice(),20)
     }
     
-    
-    struct CartItem: CartItemProtocol {
+    func testCart_AddTwoTimesSameProduct_CartShouldHaveOneProductWithQuantityOfTwo(){
+        //arrange
+        //let sut = Cart(items: [item1,item1])
+        let sut = Cart(items: [])
         
+        sut.addItem(item1)
+        sut.addItem(item1)
+        
+        //act
+        
+        for item in sut.getItems() {
+            print("ITEMS: \(item.item), \(item.quantity)")
+        }
+        //assert
+        XCTAssertEqual(sut.getItems().count,1)
+        XCTAssertEqual(sut.getItems().first!.quantity,2)
+    }
+    
+    
+    class CartItem: CartItemProtocol {
+              
         let item: String
         var price: Double
-
+        var quantity: Int = 1
+        
+        internal init(item: String, price: Double, quantity: Int = 1) {
+            self.item = item
+            self.price = price
+            self.quantity = quantity
+        }
         
         func isEqual(_ other: CartItemProtocol) -> Bool {
             return item == other.item
+        }
+        
+        func setQuantity(_ quantity: Int) {
+            self.quantity = quantity
         }
         
     }
