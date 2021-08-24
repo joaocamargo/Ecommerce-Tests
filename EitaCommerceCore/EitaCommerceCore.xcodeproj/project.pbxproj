@@ -10,6 +10,7 @@
 		053615D926D14FA9009F7C05 /* EitaCommerceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053615CF26D14FA9009F7C05 /* EitaCommerceCore.framework */; };
 		053615EA26D153F4009F7C05 /* CartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053615E926D153F4009F7C05 /* CartTests.swift */; };
 		05A24D1426D27E3B00465FFA /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A24D1326D27E3B00465FFA /* Cart.swift */; };
+		05B461F326D556D100ED6A4F /* AddICartUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B461F226D556D100ED6A4F /* AddICartUseCaseTest.swift */; };
 		05B7BB0826D4669800FF3073 /* Ext+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7BB0726D4669800FF3073 /* Ext+Array.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		053615DF26D14FA9009F7C05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		053615E926D153F4009F7C05 /* CartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTests.swift; sourceTree = "<group>"; };
 		05A24D1326D27E3B00465FFA /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		05B461F226D556D100ED6A4F /* AddICartUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddICartUseCaseTest.swift; sourceTree = "<group>"; };
 		05B7BB0726D4669800FF3073 /* Ext+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Array.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 			children = (
 				053615DF26D14FA9009F7C05 /* Info.plist */,
 				053615E926D153F4009F7C05 /* CartTests.swift */,
+				05B461F226D556D100ED6A4F /* AddICartUseCaseTest.swift */,
 			);
 			path = EitaCommerceCoreTests;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				053615EA26D153F4009F7C05 /* CartTests.swift in Sources */,
+				05B461F326D556D100ED6A4F /* AddICartUseCaseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
