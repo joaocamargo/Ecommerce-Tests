@@ -8,16 +8,22 @@
 import Foundation
 
 
+
+public protocol ItemProtocol {
+    var id: UUID { get }
+    var name: String { get }
+    var price: Double { get }
+}
+
+
 public protocol CartItemProtocol {
-    var item: String { get }
+    var item: ItemProtocol { get }
     var price: Double { get }
     var quantity: Int { get }    
     
-    //func getPrice() -> Double
     func setQuantity(_ quantity: Int)
     func isEqual(_ other: CartItemProtocol) -> Bool
 }
-
 
 public final class Cart {
     
@@ -25,10 +31,10 @@ public final class Cart {
     
     private var items: [CartItemProtocol]
     
-    //MARK: - public init
+    //MARK: - private init
     
-    public init(items: [CartItemProtocol]) {
-        self.items = Cart.addItemOrUpdateQuantity(items)
+    private init(items: [CartItemProtocol]) {
+        self.items = items // Cart.start(items)
     }
     
     //MARK: - Public methods
@@ -49,12 +55,19 @@ public final class Cart {
     }
     
     public func removeItem(_ item: CartItemProtocol) {
-        
-        let index = items.firstIndex(where: { $0.isEqual(item) }) // OR  items.firstIndex(of: Iitem)
-        
-        if let index = index {
-            items.remove(at: index)
+               
+        guard let itemIndex = items.firstIndex(where: { $0.isEqual(item) }) else {
+            return
         }
+        
+        let item = items[itemIndex]
+        
+        if item.quantity > 1 {
+            item.setQuantity(item.quantity - 1)
+        } else {
+            items.remove(at: itemIndex)
+        }
+        
     }
     
     public func clear() {
@@ -67,18 +80,24 @@ public final class Cart {
     
     //MARK: - Private Items
     
-    private static func addItemOrUpdateQuantity(_ items: [CartItemProtocol]) -> [CartItemProtocol] {
+    public static func start(items: [CartItemProtocol]) -> Cart {
         
         //removo todos os items que estão duplicados trazendo os mesmos apenas uma vez
         let uniqueArray = items.filterDuplicates{ $0.isEqual($1) }
+        
+        
+        
         
         //para cada item do array inicial conto quantos vezes ele apareceu e atribuo ao array inicial
         uniqueArray.forEach { item in
             item.setQuantity(items.filter{$0.isEqual(item)}.count)
         }
+       
+        return Cart(items: uniqueArray)
         
-        return uniqueArray
         
+        //teste
+        //let iii = Array(Set(items))
         
         // EITA DEV
         //        var filteredItems = [CartItemProtocol]()
