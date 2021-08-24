@@ -25,27 +25,27 @@ public protocol CartItemProtocol {
     func isEqual(_ other: CartItemProtocol) -> Bool
 }
 
-public final class Cart {
+public final class Cart<Item: CartItemProtocol> {
     
     //MARK: - private properties
     
-    private var items: [CartItemProtocol]
+    private var items: [Item]
     
     //MARK: - private init
     
-    private init(items: [CartItemProtocol]) {
+    private init(items: [Item]) {
         self.items = items // Cart.start(items)
     }
     
     //MARK: - Public methods
     
-    public func getItems() -> [CartItemProtocol] {
+    public func getItems() -> [Item] {
         return items
     }
     
     
     
-    public func addItem(_ item: CartItemProtocol) {
+    public func addItem(_ item: Item) {
         
         guard let item = items.first(where: { $0.isEqual(item) }) else {
             return items.append(item)
@@ -80,7 +80,7 @@ public final class Cart {
     
     //MARK: - Private Items
     
-    public static func start(items: [CartItemProtocol]) -> Cart {
+    public static func start(items: [Item]) -> Cart {
         
         //removo todos os items que estão duplicados trazendo os mesmos apenas uma vez
         let uniqueArray = items.filterDuplicates{ $0.isEqual($1) }

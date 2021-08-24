@@ -17,7 +17,7 @@ class CartTests: XCTestCase {
     func testCart_AddOneIitem_ShouldHaveOneIitem(){
         
         // Arrange
-        let sut = Cart.start(items: [])
+        let sut = Cart.start(items: [CartItem]())
         
         //Act
         sut.addItem(item1)
@@ -31,7 +31,7 @@ class CartTests: XCTestCase {
     func testCart_AddTwoIitem_ShouldHaveTwoIitem(){
         
         // Arrange
-        let sut = Cart.start(items: [])
+        let sut = Cart.start(items:  [CartItem]())
         
         //Act
         sut.addItem(item1)
@@ -100,7 +100,7 @@ class CartTests: XCTestCase {
     func testCart_AddTwoTimesSameItem_CartShouldHaveOneProductWithQuantityOfTwo(){
         //arrange
         //let sut = Cart.start(items: [item1,item1])
-        let sut = Cart.start(items: [])
+        let sut = Cart.start(items: [CartItem]())
         
         sut.addItem(item1)
         sut.addItem(item1)
