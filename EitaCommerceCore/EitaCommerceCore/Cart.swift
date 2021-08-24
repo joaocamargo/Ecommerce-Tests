@@ -22,10 +22,12 @@ public protocol CartItemProtocol {
     var quantity: Int { get }    
     
     func setQuantity(_ quantity: Int)
-    func isEqual(_ other: CartItemProtocol) -> Bool
+    //func isEqual(_ other: CartItemProtocol) -> Bool
 }
 
-public final class Cart<Item: CartItemProtocol> {
+public typealias CartItemEquatable = (CartItemProtocol & Equatable)
+
+public final class Cart<Item: CartItemEquatable> {
     
     //MARK: - private properties
     
@@ -47,16 +49,16 @@ public final class Cart<Item: CartItemProtocol> {
     
     public func addItem(_ item: Item) {
         
-        guard let item = items.first(where: { $0.isEqual(item) }) else {
+        guard let item = items.first(where: { $0 == item }) else {
             return items.append(item)
         }
         
         item.setQuantity(item.quantity + 1) 
     }
     
-    public func removeItem(_ item: CartItemProtocol) {
+    public func removeItem(_ item: Item) {
                
-        guard let itemIndex = items.firstIndex(where: { $0.isEqual(item) }) else {
+        guard let itemIndex = items.firstIndex(where: { $0 == item }) else {
             return
         }
         
@@ -83,29 +85,27 @@ public final class Cart<Item: CartItemProtocol> {
     public static func start(items: [Item]) -> Cart {
         
         //removo todos os items que estão duplicados trazendo os mesmos apenas uma vez
-        let uniqueArray = items.filterDuplicates{ $0.isEqual($1) }
+        let uniqueArray = items.filterDuplicates{ $0 == $1  }
         
         
         
         
         //para cada item do array inicial conto quantos vezes ele apareceu e atribuo ao array inicial
         uniqueArray.forEach { item in
-            item.setQuantity(items.filter{$0.isEqual(item)}.count)
+            item.setQuantity(items.filter{$0 == item }.count)
         }
        
         return Cart(items: uniqueArray)
         
         
         //teste
-        //let iii = Array(Set(items))
+        //let iii = Array(Set(items.map({$0.item.id})))
         
         // EITA DEV
         //        var filteredItems = [CartItemProtocol]()
         //
         //        items.forEach { item in
-        //            let internalFilterItem = items.filter { internalItem in
-        //                item.isEqual(internalItem)
-        //            }
+        //            let internalFilterItem = items.filter{ $0 == item }
         //
         //            if !filteredItems.contains(where: { $0.isEqual(item) }) {
         //                item.setQuantity(internalFilterItem.count)

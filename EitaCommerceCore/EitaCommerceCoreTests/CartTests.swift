@@ -24,7 +24,7 @@ class CartTests: XCTestCase {
                
         //Assert
         XCTAssertEqual(sut.getItems().count,1)
-        XCTAssertTrue(sut.getItems().first!.isEqual(item1))
+        XCTAssertEqual(sut.getItems().first,item1)
     }
     
     
@@ -38,8 +38,8 @@ class CartTests: XCTestCase {
         sut.addItem(item2)
                
         //Assert
-        XCTAssertTrue(sut.getItems().first!.isEqual(item1))
-        XCTAssertTrue(sut.getItems().last!.isEqual(item2))
+        XCTAssertEqual(sut.getItems().first,item1)
+        XCTAssertEqual(sut.getItems().last,item2)
         XCTAssertEqual(sut.getItems().count,2)
     }
     
@@ -51,8 +51,8 @@ class CartTests: XCTestCase {
         sut.removeItem(item1)
         
         //Assert
-        XCTAssertTrue(sut.getItems().first!.isEqual(item2))
-        XCTAssertTrue(sut.getItems().last!.isEqual(item2))
+        XCTAssertEqual(sut.getItems().first,item2)
+        XCTAssertEqual(sut.getItems().last,item2)
         XCTAssertEqual(sut.getItems().count,1)
     }
     
@@ -65,8 +65,8 @@ class CartTests: XCTestCase {
 
                
         //Assert
-        XCTAssertTrue(sut.getItems().first!.isEqual(item1))
-        XCTAssertTrue(sut.getItems().last!.isEqual(item2))
+        XCTAssertEqual(sut.getItems().first,item1)
+        XCTAssertEqual(sut.getItems().last,item2)
         XCTAssertEqual(sut.getItems().count,2)
     }
     
@@ -142,8 +142,8 @@ class CartTests: XCTestCase {
         
     }
     
-    class CartItem: CartItemProtocol {
-              
+    class CartItem: CartItemProtocol, Equatable {
+
         let item: ItemProtocol
         var price: Double
         var quantity: Int = 1
@@ -154,12 +154,16 @@ class CartTests: XCTestCase {
             self.quantity = quantity
         }
         
-        func isEqual(_ other: CartItemProtocol) -> Bool {
-            return item.id == other.item.id
-        }
+       // func isEqual(_ other: CartItemProtocol) -> Bool {
+       //     return item.id == other.item.id
+       // }
         
         func setQuantity(_ quantity: Int) {
             self.quantity = quantity
+        }
+        
+        static func == (lhs: CartTests.CartItem, rhs: CartTests.CartItem) -> Bool {
+            lhs.item.id == rhs.item.id
         }
         
     }
