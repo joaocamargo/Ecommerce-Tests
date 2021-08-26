@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1376CC10-98CC-4F90-AD72-6B0B12879E6D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DB8406CC-2527-45BE-9407-F97BB25A6053"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EitaCommerceCore/Cart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "start(items:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EC90465-7BB8-480D-8881-084CB0779967"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EitaCommerceCore/Cart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "start(items:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2EC90465-7BB8-480D-8881-084CB0779967 - 9189eb8752bd4175"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (&#x3c4;_0_0) -&gt; () in static EitaCommerceCore.Cart.start(items: Swift.Array&lt;&#x3c4;_0_0&gt;) -&gt; EitaCommerceCore.Cart&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "EitaCommerceCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joaocamargo/macHD/SWIFT/completeProjects/EitaEcommerce/EitaCommerceCore/EitaCommerceCore/Cart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "2EC90465-7BB8-480D-8881-084CB0779967 - 7dd22fc7a627ad42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (&#x3c4;_0_0) -&gt; Swift.Bool in closure #1 (&#x3c4;_0_0) -&gt; () in static EitaCommerceCore.Cart.start(items: Swift.Array&lt;&#x3c4;_0_0&gt;) -&gt; EitaCommerceCore.Cart&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "EitaCommerceCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joaocamargo/macHD/SWIFT/completeProjects/EitaEcommerce/EitaCommerceCore/EitaCommerceCore/Cart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "38">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE72278C-C1EE-4494-AE2B-3CA578E61D74"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EitaCommerceCore/Cart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "start(items:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE72278C-C1EE-4494-AE2B-3CA578E61D74 - 24fd61ab7cd47a87"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EitaCommerceCore.Cart.start(items: Swift.Array&lt;&#x3c4;_0_0&gt;) -&gt; EitaCommerceCore.Cart&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "EitaCommerceCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joaocamargo/macHD/SWIFT/completeProjects/EitaEcommerce/EitaCommerceCore/EitaCommerceCore/Cart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "107"
+                  endingLineNumber = "107"
+                  offsetFromSymbolStart = "113">
+               </Location>
+               <Location
+                  uuid = "CE72278C-C1EE-4494-AE2B-3CA578E61D74 - 9189eb8752bd4175"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (&#x3c4;_0_0) -&gt; () in static EitaCommerceCore.Cart.start(items: Swift.Array&lt;&#x3c4;_0_0&gt;) -&gt; EitaCommerceCore.Cart&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "EitaCommerceCore"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joaocamargo/macHD/SWIFT/completeProjects/EitaEcommerce/EitaCommerceCore/EitaCommerceCore/Cart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

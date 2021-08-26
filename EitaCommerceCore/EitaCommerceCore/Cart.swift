@@ -27,6 +27,7 @@ public protocol CartItemProtocol {
 
 public typealias CartItemEquatable = (CartItemProtocol & Equatable)
 
+
 public final class Cart<Item: CartItemEquatable> {
     
     //MARK: - private properties
@@ -35,7 +36,7 @@ public final class Cart<Item: CartItemEquatable> {
     
     //MARK: - private init
     
-    private init(items: [Item]) {
+    public init(items: [Item]) {
         self.items = items // Cart.start(items)
     }
     
@@ -83,18 +84,14 @@ public final class Cart<Item: CartItemEquatable> {
     //MARK: - Private Items
     
     public static func start(items: [Item]) -> Cart {
-        
         //removo todos os items que estão duplicados trazendo os mesmos apenas uma vez
         let uniqueArray = items.filterDuplicates{ $0 == $1  }
-        
-        
-        
-        
+
         //para cada item do array inicial conto quantos vezes ele apareceu e atribuo ao array inicial
         uniqueArray.forEach { item in
             item.setQuantity(items.filter{$0 == item }.count)
         }
-       
+
         return Cart(items: uniqueArray)
         
         
@@ -102,18 +99,18 @@ public final class Cart<Item: CartItemEquatable> {
         //let iii = Array(Set(items.map({$0.item.id})))
         
         // EITA DEV
-        //        var filteredItems = [CartItemProtocol]()
-        //
-        //        items.forEach { item in
-        //            let internalFilterItem = items.filter{ $0 == item }
-        //
-        //            if !filteredItems.contains(where: { $0.isEqual(item) }) {
-        //                item.setQuantity(internalFilterItem.count)
-        //                filteredItems.append(item)
-        //            }
-        //        }
-        //
-        //        return filteredItems
+//                var filteredItems = [Item]()
+//
+//                items.forEach { item in
+//                    let internalFilterItem = items.filter{ $0 == item }
+//
+//                    if !filteredItems.contains(where: { $0 == item }) {
+//                        item.setQuantity(internalFilterItem.count)
+//                        filteredItems.append(item)
+//                    }
+//                }
+//
+//        return Cart(items: filteredItems)
         
     }
 }

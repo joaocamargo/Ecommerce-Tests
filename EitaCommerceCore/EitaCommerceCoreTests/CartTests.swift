@@ -14,34 +14,7 @@ class CartTests: XCTestCase {
     let item2 = CartItem(item: Item(name: "Item 2", price: 10))
     let item3 = CartItem(item: Item(name: "Item 3", price: 10))
 
-    func testCart_AddOneIitem_ShouldHaveOneIitem(){
-        
-        // Arrange
-        let sut = Cart.start(items: [CartItem]())
-        
-        //Act
-        sut.addItem(item1)
-               
-        //Assert
-        XCTAssertEqual(sut.getItems().count,1)
-        XCTAssertEqual(sut.getItems().first,item1)
-    }
-    
-    
-    func testCart_AddTwoIitem_ShouldHaveTwoIitem(){
-        
-        // Arrange
-        let sut = Cart.start(items:  [CartItem]())
-        
-        //Act
-        sut.addItem(item1)
-        sut.addItem(item2)
-               
-        //Assert
-        XCTAssertEqual(sut.getItems().first,item1)
-        XCTAssertEqual(sut.getItems().last,item2)
-        XCTAssertEqual(sut.getItems().count,2)
-    }
+
     
     func testCart_RemoveOneIitem_shouldHaveOneIitem(){
         // Arrange
@@ -97,25 +70,8 @@ class CartTests: XCTestCase {
         XCTAssertEqual(sut.getPrice(),20)
     }
     
-    func testCart_AddTwoTimesSameItem_CartShouldHaveOneProductWithQuantityOfTwo(){
-        //arrange
-        //let sut = Cart.start(items: [item1,item1])
-        let sut = Cart.start(items: [CartItem]())
-        
-        sut.addItem(item1)
-        sut.addItem(item1)
-        
-        //act
-        
-        for item in sut.getItems() {
-            print("ITEMS: \(item.item), \(item.quantity)")
-        }
-        //assert
-        XCTAssertEqual(sut.getItems().count,1)
-        XCTAssertEqual(sut.getItems().first!.quantity,2)
-    }
     
-    func testCart_CartWithSameTwoItens(){
+    func testCart_CartWithSameTwoItens_CartShouldBeOneItemWithQuantityOfTwo(){
         //arrange
         //let sut = Cart.start(items: [item1,item1])
         let sut = Cart.start(items: [item1,item1])
@@ -132,42 +88,7 @@ class CartTests: XCTestCase {
     }
     
     
-    //MARK: - Helper
     
-    struct Item: ItemProtocol {
-        var id = UUID()
-        var name: String
-        var price: Double
-        
-        
-    }
-    
-    class CartItem: CartItemEquatable {
-
-        let item: ItemProtocol
-        var price: Double {
-            return item.price * Double(quantity)
-        }
-        
-        var quantity: Int = 1
-        
-        internal init(item: ItemProtocol) {
-            self.item = item
-        }
-        
-       // func isEqual(_ other: CartItemProtocol) -> Bool {
-       //     return item.id == other.item.id
-       // }
-        
-        func setQuantity(_ quantity: Int) {
-            self.quantity = quantity
-        }
-        
-        static func == (lhs: CartTests.CartItem, rhs: CartTests.CartItem) -> Bool {
-            lhs.item.id == rhs.item.id
-        }
-        
-    }
     
 }
 
