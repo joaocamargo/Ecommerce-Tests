@@ -47,7 +47,6 @@ class  RemoveItemCartUseCaseTest: XCTestCase {
         //act
         let cart = sut.execute(item1, toCart: Cart(items: [item1, item2]))
         
-        cart.removeItem(item1)
         
         //assert
         XCTAssertEqual(cart.getItems().count, 1)
