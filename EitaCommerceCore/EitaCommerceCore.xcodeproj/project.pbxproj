@@ -21,6 +21,7 @@
 		05DC6E5826D7BEBF000EA936 /* ClearCartUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E5726D7BEBF000EA936 /* ClearCartUseCase.swift */; };
 		05DC6E5A26D7C0B2000EA936 /* CalculatePriceCartUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E5926D7C0B2000EA936 /* CalculatePriceCartUseCaseTests.swift */; };
 		05DC6E5C26D7C179000EA936 /* CalculatePriceICartUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E5B26D7C179000EA936 /* CalculatePriceICartUseCase.swift */; };
+		05DC6E5F26D7CA01000EA936 /* ExtensionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E5E26D7CA01000EA936 /* ExtensionTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		05DC6E5726D7BEBF000EA936 /* ClearCartUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCartUseCase.swift; sourceTree = "<group>"; };
 		05DC6E5926D7C0B2000EA936 /* CalculatePriceCartUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePriceCartUseCaseTests.swift; sourceTree = "<group>"; };
 		05DC6E5B26D7C179000EA936 /* CalculatePriceICartUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePriceICartUseCase.swift; sourceTree = "<group>"; };
+		05DC6E5E26D7CA01000EA936 /* ExtensionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		053615DC26D14FA9009F7C05 /* EitaCommerceCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				05DC6E5D26D7C9DB000EA936 /* ExtensionTest */,
 				05DC6E5426D7BB62000EA936 /* UseCase */,
 				054B1C2426D5964E004F1B0C /* Helpers */,
 				053615DF26D14FA9009F7C05 /* Info.plist */,
@@ -165,6 +168,14 @@
 				05B461F226D556D100ED6A4F /* AddItemCartUseCaseTest.swift */,
 			);
 			path = UseCase;
+			sourceTree = "<group>";
+		};
+		05DC6E5D26D7C9DB000EA936 /* ExtensionTest */ = {
+			isa = PBXGroup;
+			children = (
+				05DC6E5E26D7CA01000EA936 /* ExtensionTestCase.swift */,
+			);
+			path = ExtensionTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				05DC6E5626D7BB93000EA936 /* ClearCartUseCaseTest.swift in Sources */,
 				05A4C3EC26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift in Sources */,
 				05DC6E5A26D7C0B2000EA936 /* CalculatePriceCartUseCaseTests.swift in Sources */,
+				05DC6E5F26D7CA01000EA936 /* ExtensionTestCase.swift in Sources */,
 				054B1C2626D5965E004F1B0C /* CartItem.swift in Sources */,
 				053615EA26D153F4009F7C05 /* CartTests.swift in Sources */,
 				05A4C3EA26D725F100F268DC /* Item.swift in Sources */,

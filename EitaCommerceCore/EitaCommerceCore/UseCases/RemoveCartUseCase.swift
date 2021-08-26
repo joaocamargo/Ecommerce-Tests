@@ -30,5 +30,6 @@ class RemoveItemCartUseCase<Item: CartItemEquatable> : RemoveItemCartUseCaseProt
             items.remove(at: itemIndex)
         }
         return Cart(items: items)
-    }
+    }   
+    
 }
