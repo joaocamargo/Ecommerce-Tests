@@ -14,8 +14,8 @@
             filePath = "EitaCommerceCore/Cart.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "start(items:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "EitaCommerceCore/Cart.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "start(items:)"
             landmarkType = "7">
             <Locations>
@@ -78,42 +78,26 @@
             filePath = "EitaCommerceCore/Cart.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "start(items:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CE72278C-C1EE-4494-AE2B-3CA578E61D74 - 24fd61ab7cd47a87"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static EitaCommerceCore.Cart.start(items: Swift.Array&lt;&#x3c4;_0_0&gt;) -&gt; EitaCommerceCore.Cart&lt;&#x3c4;_0_0&gt;"
-                  moduleName = "EitaCommerceCore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joaocamargo/macHD/SWIFT/completeProjects/EitaEcommerce/EitaCommerceCore/EitaCommerceCore/Cart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "113">
-               </Location>
-               <Location
-                  uuid = "CE72278C-C1EE-4494-AE2B-3CA578E61D74 - 9189eb8752bd4175"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (&#x3c4;_0_0) -&gt; () in static EitaCommerceCore.Cart.start(items: Swift.Array&lt;&#x3c4;_0_0&gt;) -&gt; EitaCommerceCore.Cart&lt;&#x3c4;_0_0&gt;"
-                  moduleName = "EitaCommerceCore"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/joaocamargo/macHD/SWIFT/completeProjects/EitaEcommerce/EitaCommerceCore/EitaCommerceCore/Cart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "108"
-                  endingLineNumber = "108"
-                  offsetFromSymbolStart = "268">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E6AD2924-F6A4-41F1-A6E3-E8B214A4529E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EitaCommerceCoreTests/RemoveItemCartUseCaseTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "RemoveItemCartUseCaseTest"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

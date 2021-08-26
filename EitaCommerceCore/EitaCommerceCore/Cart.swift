@@ -46,8 +46,7 @@ public final class Cart<Item: CartItemEquatable> {
         return items
     }
     
-    
-    
+       
     public func addItem(_ item: Item) {
         
         guard let item = items.first(where: { $0 == item }) else {

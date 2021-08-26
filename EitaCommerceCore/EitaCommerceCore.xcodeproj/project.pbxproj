@@ -12,6 +12,7 @@
 		054B1C2626D5965E004F1B0C /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054B1C2526D5965E004F1B0C /* CartItem.swift */; };
 		05A24D1426D27E3B00465FFA /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A24D1326D27E3B00465FFA /* Cart.swift */; };
 		05A4C3EA26D725F100F268DC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4C3E926D725F100F268DC /* Item.swift */; };
+		05A4C3EC26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4C3EB26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift */; };
 		05B461F326D556D100ED6A4F /* AddItemCartUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B461F226D556D100ED6A4F /* AddItemCartUseCaseTest.swift */; };
 		05B7BB0826D4669800FF3073 /* Ext+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7BB0726D4669800FF3073 /* Ext+Array.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		054B1C2526D5965E004F1B0C /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		05A24D1326D27E3B00465FFA /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		05A4C3E926D725F100F268DC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		05A4C3EB26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveItemCartUseCaseTests.swift; sourceTree = "<group>"; };
 		05B461F226D556D100ED6A4F /* AddItemCartUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCartUseCaseTest.swift; sourceTree = "<group>"; };
 		05B7BB0726D4669800FF3073 /* Ext+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Array.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				054B1C2426D5964E004F1B0C /* Helpers */,
 				053615DF26D14FA9009F7C05 /* Info.plist */,
 				053615E926D153F4009F7C05 /* CartTests.swift */,
+				05A4C3EB26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift */,
 				05B461F226D556D100ED6A4F /* AddItemCartUseCaseTest.swift */,
 			);
 			path = EitaCommerceCoreTests;
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05A4C3EC26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift in Sources */,
 				054B1C2626D5965E004F1B0C /* CartItem.swift in Sources */,
 				053615EA26D153F4009F7C05 /* CartTests.swift in Sources */,
 				05A4C3EA26D725F100F268DC /* Item.swift in Sources */,
