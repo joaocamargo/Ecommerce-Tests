@@ -6,28 +6,8 @@
 //
 
 import XCTest
-import EitaCommerceCore
+@testable import EitaCommerceCore
 
-protocol AddItemCartUseCaseProtocol {
-    associatedtype Item: CartItemEquatable
-    func execute(_ item: Item, toCart card: Cart<Item>) -> Cart<Item>
-}
-
-class AddItemCartUseCase<Item: CartItemEquatable> : AddItemCartUseCaseProtocol {
-    
-    func execute(_ item: Item, toCart cart: Cart<Item>) -> Cart<Item> {
-        var items : [Item] = cart.getItems()
-        
-        guard let item = items.first(where: { $0 == item }) else {
-            items.append(item)
-            return  Cart(items: items)
-        }
-        
-        item.setQuantity(item.quantity + 1)
-        
-        return  Cart(items: items)
-    }
-}
 
 class  AddItemCartUseCaseTest: XCTestCase {
     
@@ -44,7 +24,7 @@ class  AddItemCartUseCaseTest: XCTestCase {
         let cart = sut.execute(item1, toCart: Cart(items: [CartItem]()))
         
         //assert
-        XCTAssertEqual(cart.getItems().count, 1)
+        XCTAssertEqual(cart.items.count, 1)
     }
     
     func testAddItemUseCase_addTwoEqualItem_ShouldReceiveCartWithOneItem(){
@@ -57,8 +37,8 @@ class  AddItemCartUseCaseTest: XCTestCase {
 
         
         //assert
-        XCTAssertEqual(cart.getItems().count, 1)
-        XCTAssertEqual(cart.getItems().first?.quantity, 2)
+        XCTAssertEqual(cart.items.count, 1)
+        XCTAssertEqual(cart.items.first?.quantity, 2)
 
     }
     
@@ -73,8 +53,8 @@ class  AddItemCartUseCaseTest: XCTestCase {
 
         
         //assert
-        XCTAssertEqual(cart.getItems().count, 2)
-        XCTAssertEqual(cart.getItems().first?.quantity, 1)
+        XCTAssertEqual(cart.items.count, 2)
+        XCTAssertEqual(cart.items.first?.quantity, 1)
 
     }
 }

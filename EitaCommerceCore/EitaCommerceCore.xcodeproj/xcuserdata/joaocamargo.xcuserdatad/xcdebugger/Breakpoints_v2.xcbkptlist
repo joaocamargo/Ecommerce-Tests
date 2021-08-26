@@ -94,8 +94,8 @@
             filePath = "EitaCommerceCoreTests/RemoveItemCartUseCaseTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "RemoveItemCartUseCaseTest"
             landmarkType = "3">
          </BreakpointContent>

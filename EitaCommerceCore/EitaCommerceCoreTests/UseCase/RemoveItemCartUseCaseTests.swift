@@ -6,33 +6,9 @@
 //
 
 import XCTest
-import EitaCommerceCore
+@testable import EitaCommerceCore
 
-protocol RemoveItemCartUseCaseProtocol {
-    associatedtype Item: CartItemEquatable
-    func execute(_ item: Item, toCart card: Cart<Item>) -> Cart<Item>
-}
 
-class RemoveItemCartUseCase<Item: CartItemEquatable> : AddItemCartUseCaseProtocol {
-    
-    func execute(_ item: Item, toCart cart: Cart<Item>) -> Cart<Item> {
-        
-        var items = cart.getItems()
-        
-        guard let itemIndex = items.firstIndex(where: { $0 == item }) else {
-            return cart
-        }
-        
-        let item = items[itemIndex]
-        
-        if item.quantity > 1 {
-            item.setQuantity(item.quantity - 1)
-        } else {
-            items.remove(at: itemIndex)
-        }
-        return Cart(items: items)
-    }
-}
 
 class  RemoveItemCartUseCaseTest: XCTestCase {
     
@@ -49,9 +25,9 @@ class  RemoveItemCartUseCaseTest: XCTestCase {
         
         
         //assert
-        XCTAssertEqual(cart.getItems().count, 1)
-        XCTAssertEqual(cart.getItems().first!, item2)
-        XCTAssertEqual(cart.getItems().last!, item2)
+        XCTAssertEqual(cart.items.count, 1)
+        XCTAssertEqual(cart.items.first!, item2)
+        XCTAssertEqual(cart.items.last!, item2)
     }
     
     func testRemoveItemUseCase_removeOneItemWithQuantityOfTwo_ShouldReceiveCartWithTwoItems(){
@@ -67,9 +43,9 @@ class  RemoveItemCartUseCaseTest: XCTestCase {
         let cart = sut.execute(item1, toCart: Cart(items: [item, item2]))
     
         
-        XCTAssertEqual(cart.getItems().count, 2)
-        XCTAssertEqual(cart.getItems().first!, item)
-        XCTAssertEqual(cart.getItems().last!, item2)
+        XCTAssertEqual(cart.items.count, 2)
+        XCTAssertEqual(cart.items.first!, item)
+        XCTAssertEqual(cart.items.last!, item2)
     }
     
 
