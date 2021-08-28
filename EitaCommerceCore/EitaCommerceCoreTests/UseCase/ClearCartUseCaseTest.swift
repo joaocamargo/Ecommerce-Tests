@@ -13,10 +13,7 @@ import XCTest
 
 class  ClearCartUseCaseTest: XCTestCase {
     
-    let item1 = CartItem(item: Item(name: "Item 1", price: 10))
-    let item2 = CartItem(item: Item(name: "Item 2", price: 10))
-    let item3 = CartItem(item: Item(name: "Item 3", price: 10))
-    
+ 
     
     func testAddItemUseCase_clearCart_ShouldReceiveAnEmptyCart(){
         //arrange

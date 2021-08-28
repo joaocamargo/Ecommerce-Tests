@@ -14,7 +14,7 @@ import XCTest
 class EitaCommerceCoreTests: XCTestCase {
     
     
-    let item =  CartItem(item: Item(name: "Item 1", price: 10.0))
+    let item =  CartItem(item: Item(id: 1,name: "Item 1", price: 10.0))
     
     func testEitaCommerceCore_start_ShouldReturnValidEitaCommerceCore(){
         //arrange
