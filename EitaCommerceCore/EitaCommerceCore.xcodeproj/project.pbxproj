@@ -15,6 +15,7 @@
 		05A4C3EC26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A4C3EB26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift */; };
 		05B461F326D556D100ED6A4F /* AddItemCartUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B461F226D556D100ED6A4F /* AddItemCartUseCaseTest.swift */; };
 		05B7BB0826D4669800FF3073 /* Ext+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B7BB0726D4669800FF3073 /* Ext+Array.swift */; };
+		05CA6EFF26DA579700AADAA4 /* EitaCommerceCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05CA6EFE26DA579700AADAA4 /* EitaCommerceCoreTests.swift */; };
 		05DC6E4E26D7BA1C000EA936 /* AddItemCartUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E4D26D7BA1C000EA936 /* AddItemCartUseCase.swift */; };
 		05DC6E5026D7BA4F000EA936 /* RemoveCartUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E4F26D7BA4F000EA936 /* RemoveCartUseCase.swift */; };
 		05DC6E5626D7BB93000EA936 /* ClearCartUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05DC6E5526D7BB93000EA936 /* ClearCartUseCaseTest.swift */; };
@@ -46,6 +47,7 @@
 		05A4C3EB26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveItemCartUseCaseTests.swift; sourceTree = "<group>"; };
 		05B461F226D556D100ED6A4F /* AddItemCartUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCartUseCaseTest.swift; sourceTree = "<group>"; };
 		05B7BB0726D4669800FF3073 /* Ext+Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+Array.swift"; sourceTree = "<group>"; };
+		05CA6EFE26DA579700AADAA4 /* EitaCommerceCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitaCommerceCoreTests.swift; sourceTree = "<group>"; };
 		05DC6E4D26D7BA1C000EA936 /* AddItemCartUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCartUseCase.swift; sourceTree = "<group>"; };
 		05DC6E4F26D7BA4F000EA936 /* RemoveCartUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveCartUseCase.swift; sourceTree = "<group>"; };
 		05DC6E5526D7BB93000EA936 /* ClearCartUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCartUseCaseTest.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		053615DC26D14FA9009F7C05 /* EitaCommerceCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				05CA6EFE26DA579700AADAA4 /* EitaCommerceCoreTests.swift */,
 				05DC6E5D26D7C9DB000EA936 /* ExtensionTest */,
 				05DC6E5426D7BB62000EA936 /* UseCase */,
 				054B1C2426D5964E004F1B0C /* Helpers */,
@@ -302,6 +305,7 @@
 			files = (
 				05DC6E5626D7BB93000EA936 /* ClearCartUseCaseTest.swift in Sources */,
 				05A4C3EC26D7B1D300F268DC /* RemoveItemCartUseCaseTests.swift in Sources */,
+				05CA6EFF26DA579700AADAA4 /* EitaCommerceCoreTests.swift in Sources */,
 				05DC6E5A26D7C0B2000EA936 /* CalculatePriceCartUseCaseTests.swift in Sources */,
 				05DC6E5F26D7CA01000EA936 /* ExtensionTestCase.swift in Sources */,
 				054B1C2626D5965E004F1B0C /* CartItem.swift in Sources */,

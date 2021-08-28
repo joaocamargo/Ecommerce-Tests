@@ -29,9 +29,5 @@ public typealias CartItemEquatable = (CartItemProtocol & Equatable)
 
 
 public struct Cart<Item: CartItemEquatable> {
-    
-    //MARK: - private properties
-    
     let items: [Item]
-   
 }
