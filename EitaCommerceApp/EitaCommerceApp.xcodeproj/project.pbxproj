@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05619FC626DA6DC300797922 /* EitaCommerceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05619FC526DA6DC300797922 /* EitaCommerceAppApp.swift */; };
+		05619FC826DA6DC300797922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05619FC726DA6DC300797922 /* ContentView.swift */; };
+		05619FCA26DA6DC500797922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05619FC926DA6DC500797922 /* Assets.xcassets */; };
+		05619FCD26DA6DC500797922 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05619FCC26DA6DC500797922 /* Preview Assets.xcassets */; };
+		05619FD826DA6DC500797922 /* EitaCommerceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05619FD726DA6DC500797922 /* EitaCommerceAppTests.swift */; };
+		05619FE326DA6DC500797922 /* EitaCommerceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05619FE226DA6DC500797922 /* EitaCommerceAppUITests.swift */; };
+		05619FF226DA71E600797922 /* EitaCommerceCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05619FF126DA71E600797922 /* EitaCommerceCore.framework */; };
+		05619FF326DA71E600797922 /* EitaCommerceCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05619FF126DA71E600797922 /* EitaCommerceCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05619FF626DA77B500797922 /* ItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05619FF526DA77B500797922 /* ItemTests.swift */; };
+		059C2A6326DA90F20047E323 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059C2A6226DA90F20047E323 /* Item.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05619FD426DA6DC500797922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05619FBA26DA6DC300797922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05619FC126DA6DC300797922;
+			remoteInfo = EitaCommerceApp;
+		};
+		05619FDF26DA6DC500797922 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05619FBA26DA6DC300797922 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05619FC126DA6DC300797922;
+			remoteInfo = EitaCommerceApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05619FF426DA71E600797922 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05619FF326DA71E600797922 /* EitaCommerceCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05619FC226DA6DC300797922 /* EitaCommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EitaCommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05619FC526DA6DC300797922 /* EitaCommerceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitaCommerceAppApp.swift; sourceTree = "<group>"; };
+		05619FC726DA6DC300797922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		05619FC926DA6DC500797922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05619FCC26DA6DC500797922 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05619FCE26DA6DC500797922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05619FD326DA6DC500797922 /* EitaCommerceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EitaCommerceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05619FD726DA6DC500797922 /* EitaCommerceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitaCommerceAppTests.swift; sourceTree = "<group>"; };
+		05619FD926DA6DC500797922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05619FDE26DA6DC500797922 /* EitaCommerceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EitaCommerceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05619FE226DA6DC500797922 /* EitaCommerceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitaCommerceAppUITests.swift; sourceTree = "<group>"; };
+		05619FE426DA6DC500797922 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05619FF126DA71E600797922 /* EitaCommerceCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EitaCommerceCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05619FF526DA77B500797922 /* ItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTests.swift; sourceTree = "<group>"; };
+		059C2A6226DA90F20047E323 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05619FBF26DA6DC300797922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05619FF226DA71E600797922 /* EitaCommerceCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05619FD026DA6DC500797922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05619FDB26DA6DC500797922 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05619FB926DA6DC300797922 = {
+			isa = PBXGroup;
+			children = (
+				05619FC426DA6DC300797922 /* EitaCommerceApp */,
+				05619FD626DA6DC500797922 /* EitaCommerceAppTests */,
+				05619FE126DA6DC500797922 /* EitaCommerceAppUITests */,
+				05619FC326DA6DC300797922 /* Products */,
+				05619FF026DA71E600797922 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05619FC326DA6DC300797922 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05619FC226DA6DC300797922 /* EitaCommerceApp.app */,
+				05619FD326DA6DC500797922 /* EitaCommerceAppTests.xctest */,
+				05619FDE26DA6DC500797922 /* EitaCommerceAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05619FC426DA6DC300797922 /* EitaCommerceApp */ = {
+			isa = PBXGroup;
+			children = (
+				059C2A6426DA91310047E323 /* Model */,
+				05619FC526DA6DC300797922 /* EitaCommerceAppApp.swift */,
+				05619FC726DA6DC300797922 /* ContentView.swift */,
+				05619FC926DA6DC500797922 /* Assets.xcassets */,
+				05619FCE26DA6DC500797922 /* Info.plist */,
+				05619FCB26DA6DC500797922 /* Preview Content */,
+			);
+			path = EitaCommerceApp;
+			sourceTree = "<group>";
+		};
+		05619FCB26DA6DC500797922 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				05619FCC26DA6DC500797922 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05619FD626DA6DC500797922 /* EitaCommerceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				05619FD726DA6DC500797922 /* EitaCommerceAppTests.swift */,
+				05619FD926DA6DC500797922 /* Info.plist */,
+				059C2A6126DA909D0047E323 /* Model */,
+			);
+			path = EitaCommerceAppTests;
+			sourceTree = "<group>";
+		};
+		05619FE126DA6DC500797922 /* EitaCommerceAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05619FE226DA6DC500797922 /* EitaCommerceAppUITests.swift */,
+				05619FE426DA6DC500797922 /* Info.plist */,
+			);
+			path = EitaCommerceAppUITests;
+			sourceTree = "<group>";
+		};
+		05619FF026DA71E600797922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05619FF126DA71E600797922 /* EitaCommerceCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		059C2A6126DA909D0047E323 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				05619FF526DA77B500797922 /* ItemTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		059C2A6426DA91310047E323 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				059C2A6226DA90F20047E323 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05619FC126DA6DC300797922 /* EitaCommerceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05619FE726DA6DC500797922 /* Build configuration list for PBXNativeTarget "EitaCommerceApp" */;
+			buildPhases = (
+				05619FBE26DA6DC300797922 /* Sources */,
+				05619FBF26DA6DC300797922 /* Frameworks */,
+				05619FC026DA6DC300797922 /* Resources */,
+				05619FF426DA71E600797922 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EitaCommerceApp;
+			productName = EitaCommerceApp;
+			productReference = 05619FC226DA6DC300797922 /* EitaCommerceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05619FD226DA6DC500797922 /* EitaCommerceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05619FEA26DA6DC500797922 /* Build configuration list for PBXNativeTarget "EitaCommerceAppTests" */;
+			buildPhases = (
+				05619FCF26DA6DC500797922 /* Sources */,
+				05619FD026DA6DC500797922 /* Frameworks */,
+				05619FD126DA6DC500797922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05619FD526DA6DC500797922 /* PBXTargetDependency */,
+			);
+			name = EitaCommerceAppTests;
+			productName = EitaCommerceAppTests;
+			productReference = 05619FD326DA6DC500797922 /* EitaCommerceAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05619FDD26DA6DC500797922 /* EitaCommerceAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05619FED26DA6DC500797922 /* Build configuration list for PBXNativeTarget "EitaCommerceAppUITests" */;
+			buildPhases = (
+				05619FDA26DA6DC500797922 /* Sources */,
+				05619FDB26DA6DC500797922 /* Frameworks */,
+				05619FDC26DA6DC500797922 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05619FE026DA6DC500797922 /* PBXTargetDependency */,
+			);
+			name = EitaCommerceAppUITests;
+			productName = EitaCommerceAppUITests;
+			productReference = 05619FDE26DA6DC500797922 /* EitaCommerceAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05619FBA26DA6DC300797922 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					05619FC126DA6DC300797922 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					05619FD226DA6DC500797922 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 05619FC126DA6DC300797922;
+					};
+					05619FDD26DA6DC500797922 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 05619FC126DA6DC300797922;
+					};
+				};
+			};
+			buildConfigurationList = 05619FBD26DA6DC300797922 /* Build configuration list for PBXProject "EitaCommerceApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05619FB926DA6DC300797922;
+			productRefGroup = 05619FC326DA6DC300797922 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05619FC126DA6DC300797922 /* EitaCommerceApp */,
+				05619FD226DA6DC500797922 /* EitaCommerceAppTests */,
+				05619FDD26DA6DC500797922 /* EitaCommerceAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05619FC026DA6DC300797922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05619FCD26DA6DC500797922 /* Preview Assets.xcassets in Resources */,
+				05619FCA26DA6DC500797922 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05619FD126DA6DC500797922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05619FDC26DA6DC500797922 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05619FBE26DA6DC300797922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05619FC826DA6DC300797922 /* ContentView.swift in Sources */,
+				059C2A6326DA90F20047E323 /* Item.swift in Sources */,
+				05619FC626DA6DC300797922 /* EitaCommerceAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05619FCF26DA6DC500797922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05619FF626DA77B500797922 /* ItemTests.swift in Sources */,
+				05619FD826DA6DC500797922 /* EitaCommerceAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05619FDA26DA6DC500797922 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05619FE326DA6DC500797922 /* EitaCommerceAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05619FD526DA6DC500797922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05619FC126DA6DC300797922 /* EitaCommerceApp */;
+			targetProxy = 05619FD426DA6DC500797922 /* PBXContainerItemProxy */;
+		};
+		05619FE026DA6DC500797922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05619FC126DA6DC300797922 /* EitaCommerceApp */;
+			targetProxy = 05619FDF26DA6DC500797922 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05619FE526DA6DC500797922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05619FE626DA6DC500797922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05619FE826DA6DC500797922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EitaCommerceApp/Preview Content\"";
+				DEVELOPMENT_TEAM = ZLRHSN44X4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EitaCommerceApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05619FE926DA6DC500797922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"EitaCommerceApp/Preview Content\"";
+				DEVELOPMENT_TEAM = ZLRHSN44X4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = EitaCommerceApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05619FEB26DA6DC500797922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLRHSN44X4;
+				INFOPLIST_FILE = EitaCommerceAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EitaCommerceApp.app/EitaCommerceApp";
+			};
+			name = Debug;
+		};
+		05619FEC26DA6DC500797922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLRHSN44X4;
+				INFOPLIST_FILE = EitaCommerceAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EitaCommerceApp.app/EitaCommerceApp";
+			};
+			name = Release;
+		};
+		05619FEE26DA6DC500797922 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLRHSN44X4;
+				INFOPLIST_FILE = EitaCommerceAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EitaCommerceApp;
+			};
+			name = Debug;
+		};
+		05619FEF26DA6DC500797922 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLRHSN44X4;
+				INFOPLIST_FILE = EitaCommerceAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = camargo.joao.com.br.EitaCommerceAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EitaCommerceApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05619FBD26DA6DC300797922 /* Build configuration list for PBXProject "EitaCommerceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05619FE526DA6DC500797922 /* Debug */,
+				05619FE626DA6DC500797922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05619FE726DA6DC500797922 /* Build configuration list for PBXNativeTarget "EitaCommerceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05619FE826DA6DC500797922 /* Debug */,
+				05619FE926DA6DC500797922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05619FEA26DA6DC500797922 /* Build configuration list for PBXNativeTarget "EitaCommerceAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05619FEB26DA6DC500797922 /* Debug */,
+				05619FEC26DA6DC500797922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05619FED26DA6DC500797922 /* Build configuration list for PBXNativeTarget "EitaCommerceAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05619FEE26DA6DC500797922 /* Debug */,
+				05619FEF26DA6DC500797922 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05619FBA26DA6DC300797922 /* Project object */;
+}
